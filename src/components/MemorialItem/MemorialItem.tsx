@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 
 import './MemorialItem.scss';
+import { MemorialItemDetails } from '../MemorialItemDetails';
 
 export const MemorialItem: FC = () => {
   const [visible, setVisible] = useState<boolean>(false);
@@ -13,7 +14,7 @@ export const MemorialItem: FC = () => {
       >
         Show details
       </button>
-      {visible ? <p>Hello, React!</p> : null}
+      {visible ? <MemorialItemDetails /> : null}
     </section>
   );
 };
