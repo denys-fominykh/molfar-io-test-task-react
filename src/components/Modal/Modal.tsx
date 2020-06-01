@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import PropTypes from 'prop-types';
 
 import './Modal.scss';
 
@@ -26,4 +27,10 @@ export const Modal: FC<ModalProps> = ({ handleClose, show, children }) => {
       />
     </div>
   );
+};
+
+Modal.propTypes = {
+  handleClose: PropTypes.func.isRequired,
+  show: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
 };
