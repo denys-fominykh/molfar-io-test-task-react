@@ -10,15 +10,20 @@ export interface ModalProps {
 
 export const Modal: FC<ModalProps> = ({ handleClose, show, children }) => {
   const showHideClassName: string = show
-    ? 'modal display-block'
-    : 'modal display-none';
+    ? 'modal modal_position modal_display-block'
+    : 'modal modal_position modal_display-none';
 
   return (
     <div className={showHideClassName}>
-      <section className="modal-main">
+      <section className="modal__main-info modal__main-info_position">
         {children}
-        <button onClick={handleClose}>close</button>
       </section>
+      <a
+        className="modal__close-btn modal__close-btn_style"
+        href="/#"
+        role="button"
+        onClick={handleClose}
+      />
     </div>
   );
 };
