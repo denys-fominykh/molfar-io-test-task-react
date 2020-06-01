@@ -3,6 +3,8 @@ import React, { FC } from 'react';
 import './App.scss';
 import logo from './img/molfarlogoclean.png';
 
+import { MemorialItem } from './components/MemorialItem';
+
 export const App: FC = () => {
   return (
     <React.Fragment>
@@ -63,6 +65,9 @@ export const App: FC = () => {
           </div>
         </nav>
       </header>
+      <main>
+        <MemorialItem />
+      </main>
     </React.Fragment>
   );
 };

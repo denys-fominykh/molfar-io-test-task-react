@@ -1,0 +1,23 @@
+.memorial-item {
+  &__show-btn {
+    &_style {
+      color: #fff;
+      cursor: pointer;
+      outline: none;
+      text-decoration: none;
+      display: inline-block;
+      background: #238cbb;
+      border-radius: 25px;
+      border: 1px solid #238cbb;
+      padding: 10px 20px 10px 20px;
+      font-size: 16px;
+      font-style: normal;
+      margin: 20px;
+
+      &:hover {
+        color: #238cbb;
+        background: #fff;
+      }
+    }
+  }
+}
