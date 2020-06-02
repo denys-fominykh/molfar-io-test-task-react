@@ -1,0 +1,225 @@
+.item-details {
+  &_flex {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  &__item {
+    &-dropdown {
+      &_flex {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      &-btn {
+        &_style {
+          display: block;
+          background-color: #3a4555;
+          opacity: 0.8;
+          text-align: center;
+          color: white;
+          padding: 7px;
+          font-size: 15px;
+          height: 17px;
+          width: 17px;
+          top: 12px;
+          right: 14px;
+          border-radius: 50%;
+          position: absolute;
+          z-index: 1;
+        }
+      }
+
+      &-content {
+        &_style {
+          display: none;
+          position: absolute;
+          background-color: #ffffff;
+          min-width: 160px;
+          border-radius: 15px;
+          top: 43px;
+          right: 15px;
+          z-index: 1;
+        }
+      }
+
+      &-content-item {
+        &_style {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          font-size: 16px;
+
+          &:hover {
+            color: #3a4555;
+          }
+        }
+      }
+
+      &:hover &-content {
+        display: block;
+      }
+
+      &:hover &-btn {
+        background-color: #3a4555;
+        opacity: 1;
+      }
+    }
+
+    &-img-block {
+      &_position {
+        display: block;
+        height: 0;
+        width: 100%;
+        padding-top: 30%;
+        overflow: hidden;
+        position: relative;
+      }
+    }
+
+    &-img {
+      &_size {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        object-fit: cover;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        max-height: 100%;
+        max-width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, 1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+      }
+    }
+
+    &-heading {
+      &_margin {
+        margin: 0 0 0 48px;
+      }
+    }
+
+    &-info-container {
+      &_flex {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &-time {
+      &_size {
+        width: 50%;
+        margin-left: 60px;
+      }
+    }
+
+    &-calendar {
+      &_content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+      }
+
+      &-icon {
+        &_size {
+          width: 27px;
+          height: 29.25px;
+          margin: 15px 27px 0 0;
+        }
+      }
+
+      &-text {
+        &_style {
+          line-height: 8px;
+          font-size: 16px;
+        }
+
+        a {
+          cursor: pointer;
+          text-decoration: none;
+          color: #238cbb;
+        }
+      }
+    }
+
+    &-pin {
+      &_content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+      }
+
+      &-icon {
+        &_size {
+          width: 24px;
+          height: 32.83px;
+          margin: 15px 27px 0 0;
+        }
+      }
+
+      &-text {
+        &_style {
+          line-height: 8px;
+          font-size: 16px;
+        }
+
+        a {
+          cursor: pointer;
+          text-decoration: none;
+          color: #238cbb;
+        }
+      }
+    }
+
+    &-about {
+      &_size {
+        width: 50%;
+        margin-right: 60px;
+      }
+
+      &-heading {
+        &_style {
+          margin: 8px 0 15px 0;
+          font-size: 24px;
+        }
+      }
+
+      &-text {
+        &_style {
+          line-height: 25px;
+          margin: 0;
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-attending-btn {
+      &_style {
+        color: #ffffff;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+        display: inline-block;
+        background: #238cbb;
+        border-radius: 25px;
+        border: 1px solid #238cbb;
+        padding: 10px 35px;
+        font-size: 16px;
+        font-style: normal;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 40px 0;
+
+        &:hover {
+          color: #238cbb;
+          background: #fff;
+        }
+      }
+    }
+  }
+}
