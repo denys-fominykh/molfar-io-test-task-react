@@ -1,0 +1,66 @@
+.header {
+  &_color {
+    color: #f8f8f8;
+    background: #238cbb;
+  }
+
+  &__navigation {
+    &_flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-logo {
+      &_position {
+        margin: 15px 15px 15px 30px;
+      }
+    }
+
+    &-logo-link {
+      &_size {
+        width: 200px;
+      }
+    }
+
+    &-links {
+      &_position {
+        margin: 15px;
+      }
+    }
+
+    &-link {
+      &_style {
+        color: #1f3d5e;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 250px 15px;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    &-add-link {
+      &_style {
+        color: #238cbb;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        background: #fff;
+        border-radius: 25px;
+        border: 1px solid #ffffff;
+        padding: 10px 20px 10px 20px;
+        font-size: 16px;
+        font-style: normal;
+        margin: 0 20px;
+
+        &:hover {
+          color: #fff;
+          background: #238cbb;
+        }
+      }
+    }
+  }
+}
