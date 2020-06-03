@@ -31,39 +31,125 @@
     }
   }
 
-  &__close-btn {
-    &_style {
-      position: absolute;
-      right: 32px;
-      top: 83px;
-      width: 62px;
-      height: 62px;
-      opacity: 0.7;
-      padding: 0;
-      border-radius: 50%;
-      background: #3a4555;
-
-      &:hover {
-        opacity: 1;
-      }
-
-      &:before, &:after {
+  &__close {
+    &-desktop-btn {
+      &_style {
         position: absolute;
-        left: 29.5px;
-        top: 12px;
-        content: ' ';
-        height: 36px;
-        width: 2px;
-        background-color: #ffffff;
-      }
+        right: 32px;
+        top: 83px;
+        width: 62px;
+        height: 62px;
+        opacity: 0.7;
+        padding: 0;
+        border-radius: 50%;
+        background: #3a4555;
 
-      &:before {
-        transform: rotate(45deg);
-      }
+        &:hover {
+          opacity: 1;
+        }
 
-      &:after {
-        transform: rotate(-45deg);
+        &:before, &:after {
+          position: absolute;
+          left: 29.5px;
+          top: 12px;
+          content: ' ';
+          height: 36px;
+          width: 2px;
+          background-color: #ffffff;
+        }
+
+        &:before {
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          transform: rotate(-45deg);
+        }
       }
     }
+
+    &-mobile-btn {
+      &_style {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .modal {
+    &__close {
+      &-desktop-btn {
+        &_style {
+          display: none;
+        }
+      }
+
+      &-mobile-btn {
+        &_style {
+          display: block;
+          position: fixed;
+          background: none;
+          border: none;
+          outline: none;
+          text-decoration: none;
+          color: #ffffff;
+          opacity: 1;
+          top: 6%;
+          left: 20%;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 956px) {
+  .modal {
+    &__close {
+      &-mobile-btn {
+        &_style {
+          top: 4%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 859px) {
+  .modal {
+    &__close {
+      &-mobile-btn {
+        &_style {
+          top: 2%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 807px) {
+  .modal {
+    &__close {
+      &-mobile-btn {
+        &_style {
+          top: 0.5%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal__main-info_position {
+    width: 90%;
+  }
+
+  .modal__close-mobile-btn_style {
+    top: 9%;
+    left: 4%;
   }
 }

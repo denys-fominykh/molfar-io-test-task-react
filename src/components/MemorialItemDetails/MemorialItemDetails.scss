@@ -223,3 +223,70 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1240px) {
+  .item-details__item-info-container_flex {
+    flex-direction: column;
+  }
+
+  .item-details__item-time_size {
+    margin: 0 auto;
+  }
+
+  .item-details__item-about_size {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .item-details__item-heading_margin {
+    font-size: 30px;
+  }
+
+  .item-details__item-calendar_content {
+    margin-top: 15px;
+  }
+
+  .item-details__item-pin_content {
+    margin-top: 15px;
+  }
+
+  .item-details__item-calendar-text_style {
+    line-height: 7px;
+    font-size: 15px;
+  }
+
+  .item-details__item-pin-text_style {
+    line-height: 7px;
+    font-size: 15px;
+  }
+
+  .item-details__item-about-heading_style {
+    font-size: 22px;
+  }
+
+  .item-details__item-about-text_style {
+    line-height: 22px;
+    font-size: 15px;
+  }
+
+  .item-details__item-attending-btn_style {
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .item-details__item-heading_margin {
+    font-size: 21px;
+    margin: 0 0 0 20px;
+  }
+
+  .item-details__item-time_size {
+    margin: 0 auto;
+    width: 84%;
+  }
+
+  .item-details__item-about-heading_style {
+    font-size: 19px;
+  }
+}

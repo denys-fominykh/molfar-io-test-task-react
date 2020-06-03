@@ -16,11 +16,17 @@ export const Modal: FC<ModalProps> = ({ handleClose, show, children }) => {
 
   return (
     <div className={showHideClassName}>
+      <button
+        className="modal__close-mobile-btn modal__close-mobile-btn_style"
+        onClick={handleClose}
+      >
+        &#8592; Back to Memorial
+      </button>
       <section className="modal__main-info modal__main-info_position">
         {children}
       </section>
       <a
-        className="modal__close-btn modal__close-btn_style"
+        className="modal__close-desktop-btn modal__close-desktop-btn_style"
         href="/#"
         role="button"
         onClick={handleClose}
