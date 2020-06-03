@@ -15,11 +15,11 @@
       &_position {
         margin: 15px 15px 15px 30px;
       }
-    }
 
-    &-logo-link {
-      &_size {
-        width: 200px;
+      &-link {
+        &_size {
+          width: 200px;
+        }
       }
     }
 
@@ -59,6 +59,112 @@
         &:hover {
           color: #fff;
           background: #238cbb;
+        }
+      }
+    }
+
+    &-overlay {
+      &-close-btn {
+        &_style {
+          display: none;
+        }
+      }
+
+      &-open-btn {
+        &_style {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  .header {
+    &__navigation {
+      &-overlay {
+        &_style {
+          height: 0;
+          width: 100%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0, 0.9);
+          overflow-x: hidden;
+          transition: 0.5s;
+        }
+
+        &-content {
+          &_position {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+          }
+        }
+
+        &-close-btn {
+          &_style {
+            padding: 8px;
+            text-decoration: none;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            font-size: 60px;
+            text-align: end;
+            margin-right: 28px;
+
+            &:hover, &:focus {
+              color: #f1f1f1;
+            }
+          }
+        }
+
+        &-open-btn {
+          &_style {
+            display: block;
+            font-size:30px;
+            cursor:pointer;
+            margin-top: 20px;
+            margin-right: 30px;
+          }
+        }
+      }
+
+      &-link {
+        &_style {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 36px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+          margin: 15px;
+
+          &:hover, &:focus {
+            color: #f1f1f1;
+          }
+        }
+      }
+
+      &-add-link {
+        &_style {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 36px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+          margin: 15px;
+          cursor: pointer;
+          background: none;
+
+          &:hover, &:focus {
+            color: #f1f1f1;
+            background: none;
+          }
         }
       }
     }
